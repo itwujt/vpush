@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+netty:
+  server:
+    websocketPort: 19999
+    websocketPath: /ws
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 1
+    timeout: 3000
+    lettuce:
+      pool:
+        min-idle: 0
+        max-idle: 8
+        max-active: 8
+        max-wait: -1ms
+        time-between-eviction-runs: 30s
